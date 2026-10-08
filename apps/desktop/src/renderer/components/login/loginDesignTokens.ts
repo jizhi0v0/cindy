@@ -162,8 +162,8 @@ export const TEXT_LINK = { x: 70, y: 238, width: 540, height: 50, fontSize: 20 }
  * 组件 = LoginSkipEntry(**不是** LoginTextLink:文字按钮与文字链接是两种组件,
  * 前者不做 hover/pressed 变色;用户拍板 2026-07-27)。
  *
- * 槽位 430..490,面板底余 10(= 500 - 490,新稿下内边距);上接 ERROR_TEXT(380..430),
- * 两者同时可见时首尾相接不重叠。字号取稿值 24(≠ TEXT_LINK 的 20,故单列常量);
+ * 槽位 430..490,面板底余 10(= 500 - 490,新稿下内边距);上方 ERROR_TEXT 槽 394..438
+ * 与本槽在容器上有交叠,但错误文案单行居中于 416、本槽文字居中于 460,墨迹不相交。字号取稿值 24(≠ TEXT_LINK 的 20,故单列常量);
  * 颜色走 --login-secondary-text(#6F6F6F 双模同值,与稿一致)。
  *
  * width 680 / height 60 是**布局容器**,容器自身不可点;hitPaddingX = 可点区在实际
