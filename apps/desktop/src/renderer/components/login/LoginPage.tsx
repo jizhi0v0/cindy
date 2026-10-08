@@ -1430,9 +1430,7 @@ export function LoginPage({
     // 根级 z-[9990] 建立 LoginPage 自己的 stacking context:整体压过品牌 overlay
     // (LoginBrandStage z-[9980])、低于 SplashScreen(z-[9999]);内部 stage(z-auto)
     // / 窗框描边(z-30)/ 拖拽条(z-40)相对层序固定(handoff 合流时序依赖此序)。
-    // lang:应用 <html lang> 不随界面语言切换;在登录根标注,CJK 才按所选语言取字形,
-    // word-break: auto-phrase 才按日文词组断行。
-    <div className="relative z-[9990] min-h-screen" lang={i18n?.language}>
+    <div className="relative z-[9990] min-h-screen">
       <LoginStage
         ssoOrgGroupY={ssoOrgGroupY}
         groupStyle={groupStyle}

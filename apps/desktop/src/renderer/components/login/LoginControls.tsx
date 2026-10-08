@@ -823,7 +823,7 @@ export function LoginLocalModeNote({ id, children }: { id?: string; children: Re
         lineHeight: `${LOCAL_MODE_NOTE.lineHeight}px`,
         fontSize: LOCAL_MODE_NOTE.fontSize,
         color: LOGIN_COLORS.secondaryText,
-        // ja 按词组断行(不把 クラウドモデル 等拆开;需登录根标注 lang);其余语言行为不变
+        // ja 按词组断行(不把 クラウドモデル 等拆开;依赖 useLocale 同步的 <html lang>);其余语言行为不变
         wordBreak: 'auto-phrase' as CSSProperties['wordBreak'],
         WebkitLineClamp: LOCAL_MODE_NOTE.maxLines,
       }}
